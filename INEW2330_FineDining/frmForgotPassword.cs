@@ -27,5 +27,10 @@ namespace INEW2330_FineDining
             label1.Parent = pictureBox1;
             label2.Parent = pictureBox1;
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
