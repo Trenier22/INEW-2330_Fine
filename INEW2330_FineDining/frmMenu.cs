@@ -19,6 +19,8 @@ namespace INEW2330_FineDining
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'inew2330su21DataSet1.Merchandise' table. You can move, or remove it, as needed.
+            this.merchandiseTableAdapter1.Fill(this.inew2330su21DataSet1.Merchandise);
             label1.Parent = pictureBox1;
             label2.Parent = pictureBox1;
         }
@@ -46,6 +48,11 @@ namespace INEW2330_FineDining
         private void lbxMenu_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

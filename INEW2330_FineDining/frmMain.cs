@@ -27,6 +27,7 @@ namespace INEW2330_FineDining
             lblOrder.Parent = pictureBox1;
             lblAbout.Parent = pictureBox1;
             lblLogin.Parent = pictureBox1;
+            ProgOps.OpenDatabase();
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -39,13 +40,9 @@ namespace INEW2330_FineDining
 
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void label3_Click(object sender, EventArgs e)
         {
+            ProgOps.CloseDatabase();
             Application.Exit();
         }
 
@@ -71,6 +68,11 @@ namespace INEW2330_FineDining
         {
             frmLogin login = new frmLogin();
             login.ShowDialog();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

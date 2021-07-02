@@ -23,12 +23,12 @@ namespace INEW2330_FineDining
             label2.Parent = pictureBox1;
             label3.Parent = pictureBox1;
             label4.Parent = pictureBox1;
-            ProgOps.OpenDatabase();
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            ProgOps.CloseDatabase();
+
             this.Close();
         }
 
@@ -60,7 +60,17 @@ namespace INEW2330_FineDining
                 // other cases
                 ProgOps.CloseDatabase();
             }
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
             
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

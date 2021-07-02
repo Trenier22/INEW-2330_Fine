@@ -13,7 +13,7 @@ namespace INEW2330_FineDining
     {
         //connection string
         private const string CONNECT_STRING = "Server=cstnt.tstc.edu;Database= inew2330su21;" +
-            "User Id=group2su212330;password=2547258";
+        "User Id=group2su212330;password=2547258";
         //build a connection to books database
         private static SqlConnection _cntDatabase = new SqlConnection(CONNECT_STRING);
         //add command object
@@ -46,11 +46,6 @@ namespace INEW2330_FineDining
                 "Database Connection", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        //public void sqlStatement(string SQLStatement)
-        //{
-        //    SQLStatement = SQLStatement.ToString();
-        //}
-
         public static void DatabaseCommand(DataGridView dgvTable, string sqlStatement)
         {
             //set the command object to null
@@ -80,5 +75,36 @@ namespace INEW2330_FineDining
             _daResults.Dispose();
             _dtResultsTable.Dispose();
         }
+
+        public static void DatabaseSQLCommand(string sqlStatement)
+        {
+            //set the command object to null
+            _sqlResultsCommand = null;
+            //reset data adapter and datatable to new
+            _daResults = new SqlDataAdapter();
+            _dtResultsTable = new DataTable();
+
+            try
+            {
+                //establish the command object
+                _sqlResultsCommand = new SqlCommand(sqlStatement, _cntDatabase);
+                //test data adapter
+                _daResults.SelectCommand = _sqlResultsCommand;
+                //fill data table
+                _daResults.Fill(_dtResultsTable);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error in SQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            //dispose of command, adapter, and table obj
+            _sqlResultsCommand.Dispose();
+            _daResults.Dispose();
+            _dtResultsTable.Dispose();
+        }
     }
+
+
 }
+
