@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.dgvOrders = new System.Windows.Forms.DataGridView();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnViewCart = new System.Windows.Forms.Button();
             this.btnCart = new System.Windows.Forms.Button();
@@ -42,12 +41,24 @@
             this.inew2330su21DataSet2 = new INEW2330_FineDining.inew2330su21DataSet2();
             this.orderDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.orderDetailsTableAdapter = new INEW2330_FineDining.inew2330su21DataSet2TableAdapters.OrderDetailsTableAdapter();
+            this.inew2330su21DataSet3 = new INEW2330_FineDining.inew2330su21DataSet3();
+            this.orderDetailsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.orderDetailsTableAdapter1 = new INEW2330_FineDining.inew2330su21DataSet3TableAdapters.OrderDetailsTableAdapter();
+            this.inew2330su21DataSet4 = new INEW2330_FineDining.inew2330su21DataSet4();
+            this.orderDetailsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.orderDetailsTableAdapter2 = new INEW2330_FineDining.inew2330su21DataSet4TableAdapters.OrderDetailsTableAdapter();
+            this.dgvOrders = new System.Windows.Forms.DataGridView();
             this.detailIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.detailQuantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
+            this.DetailCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTotal
@@ -59,20 +70,6 @@
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(113, 30);
             this.lblTotal.TabIndex = 37;
-            // 
-            // dgvOrders
-            // 
-            this.dgvOrders.AutoGenerateColumns = false;
-            this.dgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.detailIDDataGridViewTextBoxColumn,
-            this.detailQuantityDataGridViewTextBoxColumn});
-            this.dgvOrders.DataSource = this.orderDetailsBindingSource;
-            this.dgvOrders.Location = new System.Drawing.Point(30, 174);
-            this.dgvOrders.Name = "dgvOrders";
-            this.dgvOrders.RowHeadersWidth = 51;
-            this.dgvOrders.Size = new System.Drawing.Size(742, 414);
-            this.dgvOrders.TabIndex = 36;
             // 
             // btnExit
             // 
@@ -165,7 +162,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label5.Location = new System.Drawing.Point(27, 603);
+            this.label5.Location = new System.Drawing.Point(34, 603);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 29);
@@ -187,6 +184,49 @@
             // 
             this.orderDetailsTableAdapter.ClearBeforeFill = true;
             // 
+            // inew2330su21DataSet3
+            // 
+            this.inew2330su21DataSet3.DataSetName = "inew2330su21DataSet3";
+            this.inew2330su21DataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // orderDetailsBindingSource1
+            // 
+            this.orderDetailsBindingSource1.DataMember = "OrderDetails";
+            this.orderDetailsBindingSource1.DataSource = this.inew2330su21DataSet3;
+            // 
+            // orderDetailsTableAdapter1
+            // 
+            this.orderDetailsTableAdapter1.ClearBeforeFill = true;
+            // 
+            // inew2330su21DataSet4
+            // 
+            this.inew2330su21DataSet4.DataSetName = "inew2330su21DataSet4";
+            this.inew2330su21DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // orderDetailsBindingSource2
+            // 
+            this.orderDetailsBindingSource2.DataMember = "OrderDetails";
+            this.orderDetailsBindingSource2.DataSource = this.inew2330su21DataSet4;
+            // 
+            // orderDetailsTableAdapter2
+            // 
+            this.orderDetailsTableAdapter2.ClearBeforeFill = true;
+            // 
+            // dgvOrders
+            // 
+            this.dgvOrders.AutoGenerateColumns = false;
+            this.dgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.detailIDDataGridViewTextBoxColumn,
+            this.detailQuantityDataGridViewTextBoxColumn,
+            this.DetailCost});
+            this.dgvOrders.DataSource = this.orderDetailsBindingSource2;
+            this.dgvOrders.Location = new System.Drawing.Point(29, 157);
+            this.dgvOrders.Name = "dgvOrders";
+            this.dgvOrders.RowHeadersWidth = 51;
+            this.dgvOrders.Size = new System.Drawing.Size(742, 414);
+            this.dgvOrders.TabIndex = 39;
+            // 
             // detailIDDataGridViewTextBoxColumn
             // 
             this.detailIDDataGridViewTextBoxColumn.DataPropertyName = "DetailID";
@@ -199,14 +239,20 @@
             this.detailQuantityDataGridViewTextBoxColumn.HeaderText = "DetailQuantity";
             this.detailQuantityDataGridViewTextBoxColumn.Name = "detailQuantityDataGridViewTextBoxColumn";
             // 
+            // DetailCost
+            // 
+            this.DetailCost.DataPropertyName = "DetailCost";
+            this.DetailCost.HeaderText = "DetailCost";
+            this.DetailCost.Name = "DetailCost";
+            // 
             // frmCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 809);
+            this.Controls.Add(this.dgvOrders);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblTotal);
-            this.Controls.Add(this.dgvOrders);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnViewCart);
             this.Controls.Add(this.btnCart);
@@ -217,10 +263,14 @@
             this.Name = "frmCart";
             this.Text = "frmCart";
             this.Load += new System.EventHandler(this.frmCart_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,7 +278,6 @@
 
         #endregion
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.DataGridView dgvOrders;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnViewCart;
         private System.Windows.Forms.Button btnCart;
@@ -240,7 +289,15 @@
         private inew2330su21DataSet2 inew2330su21DataSet2;
         private System.Windows.Forms.BindingSource orderDetailsBindingSource;
         private inew2330su21DataSet2TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter;
+        private inew2330su21DataSet3 inew2330su21DataSet3;
+        private System.Windows.Forms.BindingSource orderDetailsBindingSource1;
+        private inew2330su21DataSet3TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter1;
+        private inew2330su21DataSet4 inew2330su21DataSet4;
+        private System.Windows.Forms.BindingSource orderDetailsBindingSource2;
+        private inew2330su21DataSet4TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter2;
+        private System.Windows.Forms.DataGridView dgvOrders;
         private System.Windows.Forms.DataGridViewTextBoxColumn detailIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn detailQuantityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DetailCost;
     }
 }

@@ -128,17 +128,21 @@ namespace INEW2330_FineDining
 
         private void frmCart_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'inew2330su21DataSet4.OrderDetails' table. You can move, or remove it, as needed.
+            this.orderDetailsTableAdapter2.Fill(this.inew2330su21DataSet4.OrderDetails);
+            // TODO: This line of code loads data into the 'inew2330su21DataSet3.OrderDetails' table. You can move, or remove it, as needed.
+            this.orderDetailsTableAdapter1.Fill(this.inew2330su21DataSet3.OrderDetails);
             // TODO: This line of code loads data into the 'inew2330su21DataSet2.OrderDetails' table. You can move, or remove it, as needed.
             this.orderDetailsTableAdapter.Fill(this.inew2330su21DataSet2.OrderDetails);
-            ProgOps.DatabaseCommand(dgvOrders, "SELECT DetailID, DetailQuantity FROM group2su212330.OrderDetails WHERE DetailQuantity > 0");
+            ProgOps.DatabaseCommand(dgvOrders, "SELECT DetailID, DetailQuantity, DetailCost FROM group2su212330.OrderDetails WHERE DetailQuantity > 0");
             label1.Parent = pictureBox1;
             label2.Parent = pictureBox1;
             label3.Parent = pictureBox1;
             label5.Parent = pictureBox1;
 
             lblTotal.Text = (from DataGridViewRow row in dgvOrders.Rows
-                             where row.Cells[0].FormattedValue.ToString() != string.Empty
-                             select Convert.ToDecimal(row.Cells[0].FormattedValue)).Sum().ToString();
+                             where row.Cells[2].FormattedValue.ToString() != string.Empty
+                             select Convert.ToDecimal(row.Cells[2].FormattedValue)).Sum().ToString();
         }
     }
 }
