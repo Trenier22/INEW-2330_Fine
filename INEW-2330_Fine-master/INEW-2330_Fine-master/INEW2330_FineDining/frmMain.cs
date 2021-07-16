@@ -60,19 +60,14 @@ namespace INEW2330_FineDining
 
         private void btnAbout_Click(object sender, EventArgs e)
         {
-            frmAboutUs aboutus = new frmAboutUs();
-            aboutus.ShowDialog();
+            frmEmployee order = new frmEmployee();
+            order.ShowDialog();
         }
 
         private void lblLogin_Click(object sender, EventArgs e)
         {
             frmLogin login = new frmLogin();
             login.ShowDialog();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -46,18 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAboutUs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAboutUs.Designer.cs">
-      <DependentUpon>frmAboutUs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCart.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCart.Designer.cs">
-      <DependentUpon>frmCart.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmCheckOut.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +57,12 @@
     </Compile>
     <Compile Include="frmForgotPassword.Designer.cs">
       <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCart.Designer.cs">
+      <DependentUpon>frmCart.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmployee.cs">
       <SubType>Form</SubType>
@@ -110,27 +104,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>inew2330su21DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="inew2330su21DataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>inew2330su21DataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="inew2330su21DataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>inew2330su21DataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="inew2330su21DataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>inew2330su21DataSet4.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ProgOps.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAboutUs.resx">
-      <DependentUpon>frmAboutUs.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmCart.resx">
       <DependentUpon>frmCart.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,39 +162,6 @@
     </None>
     <None Include="inew2330su21DataSet1.xss">
       <DependentUpon>inew2330su21DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet2.xsc">
-      <DependentUpon>inew2330su21DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>inew2330su21DataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="inew2330su21DataSet2.xss">
-      <DependentUpon>inew2330su21DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet3.xsc">
-      <DependentUpon>inew2330su21DataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>inew2330su21DataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="inew2330su21DataSet3.xss">
-      <DependentUpon>inew2330su21DataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet4.xsc">
-      <DependentUpon>inew2330su21DataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>inew2330su21DataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="inew2330su21DataSet4.xss">
-      <DependentUpon>inew2330su21DataSet4.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
