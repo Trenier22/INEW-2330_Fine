@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCart.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCart.Designer.cs">
-      <DependentUpon>frmCart.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmCheckOut.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +57,12 @@
     </Compile>
     <Compile Include="frmForgotPassword.Designer.cs">
       <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCart.Designer.cs">
+      <DependentUpon>frmCart.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmployee.cs">
       <SubType>Form</SubType>
@@ -103,11 +103,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>inew2330su21DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="inew2330su21DataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>inew2330su21DataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProgOps.cs" />
     <Compile Include="Program.cs" />
@@ -167,17 +162,6 @@
     </None>
     <None Include="inew2330su21DataSet1.xss">
       <DependentUpon>inew2330su21DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet2.xsc">
-      <DependentUpon>inew2330su21DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>inew2330su21DataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="inew2330su21DataSet2.xss">
-      <DependentUpon>inew2330su21DataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -20,17 +20,28 @@ namespace INEW2330_FineDining
         private void frmOrder_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'inew2330su21DataSet1.Merchandise' table. You can move, or remove it, as needed.
-            this.merchandiseTableAdapter.Fill(this.inew2330su21DataSet.Merchandise);
+            this.merchandiseTableAdapter.Fill(this.inew2330su21DataSet1.Merchandise);
             label1.Parent = pictureBox1;
             label2.Parent = pictureBox1;
             label3.Parent = pictureBox1;
         }
 
-        private void btnAdd_Click_1(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnViewCart_Click(object sender, EventArgs e)
+        {
+            frmCart cart = new frmCart();
+            cart.ShowDialog();
+        }
+
+        private void btnCart_Click(object sender, EventArgs e)
         {
             if (dgvOrders.CurrentCell.RowIndex == 0)
             {
-                ProgOps.DatabaseSQLCommand("UPDATE inew2330su21.group2su212330.OrderDetails SET " +
+                ProgOps.DatabaseSQLCommand("UPDATE inew2330su21.group2su212330.OrderDetails SET " + 
                     "DetailQuantity = DetailQuantity + 1 WHERE DetailID = 1");
             }
             if (dgvOrders.CurrentCell.RowIndex == 1)
@@ -106,18 +117,7 @@ namespace INEW2330_FineDining
 
             this.Controls.Clear();
             this.InitializeComponent();
-            this.merchandiseTableAdapter.Fill(this.inew2330su21DataSet.Merchandise);
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            frmCart cart = new frmCart();
-            cart.ShowDialog();
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
+            this.merchandiseTableAdapter.Fill(this.inew2330su21DataSet1.Merchandise);
         }
     }
 }
