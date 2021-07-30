@@ -143,12 +143,12 @@
             this.lblLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblLogin.Font = new System.Drawing.Font("Baskerville Old Face", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblLogin.Location = new System.Drawing.Point(425, 9);
+            this.lblLogin.Location = new System.Drawing.Point(523, 9);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblLogin.Size = new System.Drawing.Size(162, 24);
+            this.lblLogin.Size = new System.Drawing.Size(64, 24);
             this.lblLogin.TabIndex = 11;
-            this.lblLogin.Text = "Employee Login";
+            this.lblLogin.Text = "Login";
             this.lblLogin.Click += new System.EventHandler(this.lblLogin_Click);
             // 
             // pictureBox1

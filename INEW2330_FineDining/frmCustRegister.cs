@@ -22,8 +22,8 @@ namespace INEW2330_FineDining
         {
             try
             {
-                ProgOps.DatabaseSQLCommand("INSERT INTO group2su212330.Customer(CustFirstName, CustLastName, CustEmail, CustPhone, CustAddress, CustCreditCard, CustLoginUserName, CustLoginPassword)" +
-                    " VALUES('" + tbxFirstName.Text + "', '" + tbxLastName.Text + "', '" + tbxEmail.Text + "', " + tbxPhone.Text + ", '" + tbxAddress.Text + "', " + tbxCreditCard.Text + ", '" + tbxUsername.Text + "', '" + tbxPassword.Text + "');");
+                ProgOps.DatabaseSQLCommand("INSERT INTO group2su212330.Customer(CustFirstName, CustLastName, CustEmail, CustPhone, CustAddress, CustCreditCard, CustLoginUserName, CustLoginPassword, CustCVV)" +
+                    " VALUES('" + tbxFirstName.Text + "', '" + tbxLastName.Text + "', '" + tbxEmail.Text + "', " + tbxPhone.Text + ", '" + tbxAddress.Text + "', " + tbxCreditCard.Text + ", '" + tbxUsername.Text + "', '" + tbxPassword.Text + "', '" + tbxCVV.Text + "');");
                 this.Close();
             }
             catch(Exception ex)
@@ -44,6 +44,7 @@ namespace INEW2330_FineDining
             label8.Parent = pictureBox1;
             label9.Parent = pictureBox1;
             label10.Parent = pictureBox1;
+            label11.Parent = pictureBox1;
 
         }
 

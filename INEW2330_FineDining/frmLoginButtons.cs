@@ -24,25 +24,37 @@ namespace INEW2330_FineDining
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmEmployee empLogin = new frmEmployee();
             empLogin.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmOrder order = new frmOrder();
             order.ShowDialog();
+            
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmManLogin manLogin = new frmManLogin();
             manLogin.ShowDialog();
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnCustLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmCustLogin cust = new frmCustLogin();
+            cust.ShowDialog();
         }
     }
 }

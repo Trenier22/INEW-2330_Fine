@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCustLogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,8 +41,8 @@
             // 
             this.btnLogin.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnLogin.Location = new System.Drawing.Point(274, 120);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Location = new System.Drawing.Point(284, 120);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(101, 55);
             this.btnLogin.TabIndex = 24;
@@ -53,8 +54,8 @@
             // 
             this.button4.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button4.Location = new System.Drawing.Point(75, 120);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Location = new System.Drawing.Point(166, 120);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(101, 55);
             this.button4.TabIndex = 25;
@@ -78,7 +79,7 @@
             this.btnExit.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnExit.Location = new System.Drawing.Point(178, 224);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(89, 32);
             this.btnExit.TabIndex = 28;
@@ -96,17 +97,31 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
+            // btnCustLogin
+            // 
+            this.btnCustLogin.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustLogin.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnCustLogin.Location = new System.Drawing.Point(47, 120);
+            this.btnCustLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCustLogin.Name = "btnCustLogin";
+            this.btnCustLogin.Size = new System.Drawing.Size(101, 55);
+            this.btnCustLogin.TabIndex = 29;
+            this.btnCustLogin.Text = "Customer Login";
+            this.btnCustLogin.UseVisualStyleBackColor = true;
+            this.btnCustLogin.Click += new System.EventHandler(this.btnCustLogin_Click);
+            // 
             // frmLoginButtons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 276);
+            this.Controls.Add(this.btnCustLogin);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmLoginButtons";
             this.Text = "frmLoginButtons";
             this.Load += new System.EventHandler(this.frmLoginButtons_Load);
@@ -122,5 +137,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnCustLogin;
     }
 }

@@ -144,28 +144,27 @@ namespace INEW2330_FineDining
 
         private void btnViewCart_Click(object sender, EventArgs e)
         {
-           
-            var cust = new frmCustLogin();
-            cust.ShowDialog();
-            string connection = "Server=cstnt.tstc.edu;Database= inew2330su21; User Id=group2su212330;password=2547258";
-            using (SqlConnection conn = new SqlConnection(connection))
+            try
             {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("SELECT CustID FROM group2su212330.Customer WHERE CustLoginUsername = '" + cust.MyValue + "'", conn);
-                int result = (int)cmd.ExecuteScalar();
-                conn.Close();
-                ProgOps.DatabaseSQLCommand("INSERT INTO group2su212330.Orders(OrderPrice, OrderDate, ArrivalDate, CustID)" +
-                " VALUES('" + lblTotal.Text + "', GETDATE(), DATEADD(HOUR,2,GETDATE()), " + (int)result + ")");
-                MessageBox.Show("Purchase Complete");
+                var cust = new frmCustPayment();
+                cust.ShowDialog();
+                string connection = "Server=cstnt.tstc.edu;Database= inew2330su21; User Id=group2su212330;password=2547258";
+                using (SqlConnection conn = new SqlConnection(connection))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("SELECT CustID FROM group2su212330.Customer WHERE CustCreditCard = '" + cust.MyValue + "'", conn);
+                    int result = (int)cmd.ExecuteScalar();
+                    conn.Close();
+                    ProgOps.DatabaseSQLCommand("INSERT INTO group2su212330.Orders(OrderPrice, OrderDate, ArrivalDate, CustID)" +
+                    " VALUES('" + lblTotal.Text + "', GETDATE(), DATEADD(HOUR,2,GETDATE()), " + (int)result + ")");
+                    MessageBox.Show("Purchase Complete");
+                }
             }
-
-                
-
-           
-
-            //"SELECT CustID FROM group2su212330.Customer WHERE CustLoginUsername = '" + cust.MyValue + "'
-
-        }
+            catch (Exception)
+            {
+                MessageBox.Show("Error\n" + "Customers must all information into the text boxes", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
