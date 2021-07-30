@@ -20,7 +20,6 @@ namespace INEW2330_FineDining
         private void frmOrder_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'inew2330su21DataSet1.Merchandise' table. You can move, or remove it, as needed.
-            this.merchandiseTableAdapter.Fill(this.inew2330su21DataSet.Merchandise);
             label1.Parent = pictureBox1;
             label2.Parent = pictureBox1;
             label3.Parent = pictureBox1;

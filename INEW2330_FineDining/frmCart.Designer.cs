@@ -38,22 +38,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.inew2330su21DataSet2 = new INEW2330_FineDining.inew2330su21DataSet2();
             this.orderDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.orderDetailsTableAdapter = new INEW2330_FineDining.inew2330su21DataSet2TableAdapters.OrderDetailsTableAdapter();
-            this.inew2330su21DataSet3 = new INEW2330_FineDining.inew2330su21DataSet3();
             this.orderDetailsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.orderDetailsTableAdapter1 = new INEW2330_FineDining.inew2330su21DataSet3TableAdapters.OrderDetailsTableAdapter();
-            this.inew2330su21DataSet4 = new INEW2330_FineDining.inew2330su21DataSet4();
             this.orderDetailsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.orderDetailsTableAdapter2 = new INEW2330_FineDining.inew2330su21DataSet4TableAdapters.OrderDetailsTableAdapter();
             this.dgvOrders = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
             this.SuspendLayout();
@@ -167,43 +161,13 @@
             this.label5.Text = "Total:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // inew2330su21DataSet2
-            // 
-            this.inew2330su21DataSet2.DataSetName = "inew2330su21DataSet2";
-            this.inew2330su21DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // orderDetailsBindingSource
-            // 
-            this.orderDetailsBindingSource.DataMember = "OrderDetails";
-            this.orderDetailsBindingSource.DataSource = this.inew2330su21DataSet2;
-            // 
             // orderDetailsTableAdapter
             // 
             this.orderDetailsTableAdapter.ClearBeforeFill = true;
             // 
-            // inew2330su21DataSet3
-            // 
-            this.inew2330su21DataSet3.DataSetName = "inew2330su21DataSet3";
-            this.inew2330su21DataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // orderDetailsBindingSource1
-            // 
-            this.orderDetailsBindingSource1.DataMember = "OrderDetails";
-            this.orderDetailsBindingSource1.DataSource = this.inew2330su21DataSet3;
-            // 
             // orderDetailsTableAdapter1
             // 
             this.orderDetailsTableAdapter1.ClearBeforeFill = true;
-            // 
-            // inew2330su21DataSet4
-            // 
-            this.inew2330su21DataSet4.DataSetName = "inew2330su21DataSet4";
-            this.inew2330su21DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // orderDetailsBindingSource2
-            // 
-            this.orderDetailsBindingSource2.DataMember = "OrderDetails";
-            this.orderDetailsBindingSource2.DataSource = this.inew2330su21DataSet4;
             // 
             // orderDetailsTableAdapter2
             // 
@@ -238,11 +202,8 @@
             this.Text = "frmCart";
             this.Load += new System.EventHandler(this.frmCart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();
             this.ResumeLayout(false);
@@ -260,13 +221,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
-        private inew2330su21DataSet2 inew2330su21DataSet2;
         private System.Windows.Forms.BindingSource orderDetailsBindingSource;
         private inew2330su21DataSet2TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter;
-        private inew2330su21DataSet3 inew2330su21DataSet3;
         private System.Windows.Forms.BindingSource orderDetailsBindingSource1;
         private inew2330su21DataSet3TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter1;
-        private inew2330su21DataSet4 inew2330su21DataSet4;
         private System.Windows.Forms.BindingSource orderDetailsBindingSource2;
         private inew2330su21DataSet4TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter2;
         private System.Windows.Forms.DataGridView dgvOrders;

@@ -35,16 +35,7 @@
               <Mapping SourceColumn="MerchDescription" DataSetColumn="MerchDescription" />
               <Mapping SourceColumn="MerchCost" DataSetColumn="MerchCost" />
             </Mappings>
-            <Sources>
-              <DbSource ConnectionRef="inew2330su21ConnectionString (Settings)" DbObjectName="inew2330su21.group2su212330.Merchandise" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT MerchID, MerchName, MerchDescription, MerchCost FROM group2su212330.Merchandise</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </Sources>
+            <Sources />
           </TableAdapter>
         </Tables>
         <Sources />
@@ -54,7 +45,7 @@
   <xs:element name="inew2330su21DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="inew2330su21DataSet" msprop:Generator_UserDSName="inew2330su21DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Merchandise" msprop:Generator_TableClassName="MerchandiseDataTable" msprop:Generator_TableVarName="tableMerchandise" msprop:Generator_TablePropName="Merchandise" msprop:Generator_RowDeletingName="MerchandiseRowDeleting" msprop:Generator_RowChangingName="MerchandiseRowChanging" msprop:Generator_RowEvHandlerName="MerchandiseRowChangeEventHandler" msprop:Generator_RowDeletedName="MerchandiseRowDeleted" msprop:Generator_UserTableName="Merchandise" msprop:Generator_RowChangedName="MerchandiseRowChanged" msprop:Generator_RowEvArgName="MerchandiseRowChangeEvent" msprop:Generator_RowClassName="MerchandiseRow">
+        <xs:element name="Merchandise" msprop:Generator_TableClassName="MerchandiseDataTable" msprop:Generator_TableVarName="tableMerchandise" msprop:Generator_RowChangedName="MerchandiseRowChanged" msprop:Generator_TablePropName="Merchandise" msprop:Generator_RowDeletingName="MerchandiseRowDeleting" msprop:Generator_RowChangingName="MerchandiseRowChanging" msprop:Generator_RowEvHandlerName="MerchandiseRowChangeEventHandler" msprop:Generator_RowDeletedName="MerchandiseRowDeleted" msprop:Generator_RowClassName="MerchandiseRow" msprop:Generator_UserTableName="Merchandise" msprop:Generator_RowEvArgName="MerchandiseRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MerchID" msprop:Generator_ColumnVarNameInTable="columnMerchID" msprop:Generator_ColumnPropNameInRow="MerchID" msprop:Generator_ColumnPropNameInTable="MerchIDColumn" msprop:Generator_UserColumnName="MerchID" type="xs:int" minOccurs="0" />

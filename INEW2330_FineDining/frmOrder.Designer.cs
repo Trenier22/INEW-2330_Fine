@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.dgvOrders = new System.Windows.Forms.DataGridView();
             this.merchandiseBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.inew2330su21DataSet = new INEW2330_FineDining.inew2330su21DataSet();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -47,7 +46,6 @@
             this.btnMinus = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.merchandiseBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.merchandiseBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -60,16 +58,6 @@
             this.dgvOrders.RowHeadersWidth = 51;
             this.dgvOrders.Size = new System.Drawing.Size(750, 356);
             this.dgvOrders.TabIndex = 30;
-            // 
-            // merchandiseBindingSource1
-            // 
-            this.merchandiseBindingSource1.DataMember = "Merchandise";
-            this.merchandiseBindingSource1.DataSource = this.inew2330su21DataSet;
-            // 
-            // inew2330su21DataSet
-            // 
-            this.inew2330su21DataSet.DataSetName = "inew2330su21DataSet";
-            this.inew2330su21DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label2
             // 
@@ -113,7 +101,7 @@
             this.button1.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.button1.Location = new System.Drawing.Point(457, 623);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 54);
             this.button1.TabIndex = 29;
@@ -126,7 +114,7 @@
             this.button2.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.button2.Location = new System.Drawing.Point(306, 623);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(89, 54);
             this.button2.TabIndex = 28;
@@ -143,7 +131,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnAdd.Location = new System.Drawing.Point(381, 559);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(89, 54);
             this.btnAdd.TabIndex = 27;
@@ -167,7 +155,7 @@
             // tbxQuantity
             // 
             this.tbxQuantity.Location = new System.Drawing.Point(167, 568);
-            this.tbxQuantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.tbxQuantity.Name = "tbxQuantity";
             this.tbxQuantity.Size = new System.Drawing.Size(34, 20);
             this.tbxQuantity.TabIndex = 31;
@@ -225,14 +213,13 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Order";
             this.Load += new System.EventHandler(this.frmOrder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.merchandiseBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.merchandiseBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -244,7 +231,6 @@
 
         private System.Windows.Forms.DataGridView dgvOrders;
         private System.Windows.Forms.BindingSource merchandiseBindingSource1;
-        private inew2330su21DataSet inew2330su21DataSet;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;

@@ -35,22 +35,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.merchandiseBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.inew2330su21DataSet = new INEW2330_FineDining.inew2330su21DataSet();
             this.merchandiseTableAdapter = new INEW2330_FineDining.inew2330su21DataSetTableAdapters.MerchandiseTableAdapter();
             this.merchandiseBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.merchandiseBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.inew2330su21DataSet1 = new INEW2330_FineDining.inew2330su21DataSet1();
             this.merchandiseTableAdapter1 = new INEW2330_FineDining.inew2330su21DataSet1TableAdapters.MerchandiseTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.merchandiseBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.merchandiseBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.merchandiseBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -111,24 +107,9 @@
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
-            // merchandiseBindingSource
-            // 
-            this.merchandiseBindingSource.DataMember = "Merchandise";
-            this.merchandiseBindingSource.DataSource = this.inew2330su21DataSet;
-            // 
-            // inew2330su21DataSet
-            // 
-            this.inew2330su21DataSet.DataSetName = "inew2330su21DataSet";
-            this.inew2330su21DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // merchandiseTableAdapter
             // 
             this.merchandiseTableAdapter.ClearBeforeFill = true;
-            // 
-            // merchandiseBindingSource1
-            // 
-            this.merchandiseBindingSource1.DataMember = "Merchandise";
-            this.merchandiseBindingSource1.DataSource = this.inew2330su21DataSet;
             // 
             // dataGridView2
             // 
@@ -138,16 +119,6 @@
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.Size = new System.Drawing.Size(741, 412);
             this.dataGridView2.TabIndex = 19;
-            // 
-            // merchandiseBindingSource2
-            // 
-            this.merchandiseBindingSource2.DataMember = "Merchandise";
-            this.merchandiseBindingSource2.DataSource = this.inew2330su21DataSet1;
-            // 
-            // inew2330su21DataSet1
-            // 
-            this.inew2330su21DataSet1.DataSetName = "inew2330su21DataSet1";
-            this.inew2330su21DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // merchandiseTableAdapter1
             // 
@@ -199,11 +170,9 @@
             this.Load += new System.EventHandler(this.frmMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.merchandiseBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.merchandiseBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.merchandiseBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,11 +185,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.BindingSource merchandiseBindingSource;
-        private inew2330su21DataSet inew2330su21DataSet;
         private inew2330su21DataSetTableAdapters.MerchandiseTableAdapter merchandiseTableAdapter;
         private System.Windows.Forms.BindingSource merchandiseBindingSource1;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private inew2330su21DataSet1 inew2330su21DataSet1;
         private System.Windows.Forms.BindingSource merchandiseBindingSource2;
         private inew2330su21DataSet1TableAdapters.MerchandiseTableAdapter merchandiseTableAdapter1;
         private System.Windows.Forms.Button button1;

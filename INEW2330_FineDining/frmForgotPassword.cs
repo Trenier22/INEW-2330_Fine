@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net.Mail;
+
 namespace INEW2330_FineDining
 {
     public partial class frmForgotPassword : Form
@@ -53,6 +55,16 @@ namespace INEW2330_FineDining
                 MessageBox.Show("Invalid Username");
             }
         }
+
+
+
+        //public static void SendEmail(string fromAddress, string password)
+        //{
+        //    using (SmtpClient email = new SmtpClient())
+        //    {
+        //        DeliveryMethod = SmtpDeliveryMethod.Network;
+        //    }
+        //}
 
         private void btnExit_Click_1(object sender, EventArgs e)
         {

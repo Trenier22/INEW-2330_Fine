@@ -158,6 +158,11 @@
     <Compile Include="frmOrder.Designer.cs">
       <DependentUpon>frmOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="inew2330su21DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inew2330su21DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="inew2330su21DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -180,11 +185,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>inew2330su21DataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="inew2330su21DataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>inew2330su21DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProgOps.cs" />
     <Compile Include="Program.cs" />
@@ -257,7 +257,7 @@
     </None>
     <None Include="inew2330su21DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>inew2330su21DataSet5.Designer.cs</LastGenOutput>
+      <LastGenOutput>inew2330su21DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="inew2330su21DataSet.xss">
