@@ -145,11 +145,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(111, 62);
+            this.label1.Location = new System.Drawing.Point(154, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 27);
+            this.label1.Size = new System.Drawing.Size(136, 27);
             this.label1.TabIndex = 38;
-            this.label1.Text = "CUSTOMER LOGIN";
+            this.label1.Text = "PAYMENT";
             // 
             // tbxCreditCard
             // 

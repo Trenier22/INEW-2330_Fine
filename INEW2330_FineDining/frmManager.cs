@@ -32,7 +32,7 @@ namespace INEW2330_FineDining
             label1.Parent = pictureBox1;
             label2.Parent = pictureBox1;
             //ProgOps.DatabaseCommand(dgvEmp, "SELECT * FROM group2su212330.Employees");
-            ProgOps.DatabaseCommand(dgvManager, "SELECT * FROM group2su212330.Orders");
+            ProgOps.DatabaseCommand(dgvManager, "SELECT CAST(OrderPrice As Numeric(15, 2)), OrderDate, ArrivalDate, CustID, OrderID FROM group2su212330.Orders");
 
             con = new SqlConnection("Server=cstnt.tstc.edu;Database= inew2330su21;" +
                 "User Id=group2su212330;password=2547258");
