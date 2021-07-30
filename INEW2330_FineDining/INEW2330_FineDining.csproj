@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +53,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrystalReports\crptOrders.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crptOrders.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReports\crptMenu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crptMenu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmCustLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustLogin.Designer.cs">
+      <DependentUpon>frmCustLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAboutUs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,11 +83,11 @@
     <Compile Include="frmCart.Designer.cs">
       <DependentUpon>frmCart.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCheckOut.cs">
+    <Compile Include="frmCustRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCheckOut.Designer.cs">
-      <DependentUpon>frmCheckOut.cs</DependentUpon>
+    <Compile Include="frmCustRegister.Designer.cs">
+      <DependentUpon>frmCustRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="frmForgotPassword.cs">
       <SubType>Form</SubType>
@@ -76,11 +101,17 @@
     <Compile Include="frmEmployee.Designer.cs">
       <DependentUpon>frmEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="frmEmpLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="frmEmpLogin.Designer.cs">
+      <DependentUpon>frmEmpLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginButtons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginButtons.Designer.cs">
+      <DependentUpon>frmLoginButtons.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -88,22 +119,35 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManager.Designer.cs">
+      <DependentUpon>frmManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManLogin.Designer.cs">
+      <DependentUpon>frmManLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMenuViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuViewer.Designer.cs">
+      <DependentUpon>frmMenuViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOrder.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmOrder.Designer.cs">
       <DependentUpon>frmOrder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="inew2330su21DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>inew2330su21DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="inew2330su21DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -120,22 +164,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>inew2330su21DataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="inew2330su21DataSet4.cs">
+      <DependentUpon>inew2330su21DataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="inew2330su21DataSet4.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>inew2330su21DataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="inew2330su21DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inew2330su21DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProgOps.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReports\crptOrders.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crptOrders.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReports\crptMenu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crptMenu.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAboutUs.resx">
       <DependentUpon>frmAboutUs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCart.resx">
       <DependentUpon>frmCart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCheckOut.resx">
-      <DependentUpon>frmCheckOut.cs</DependentUpon>
+    <EmbeddedResource Include="frmCustLogin.resx">
+      <DependentUpon>frmCustLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustRegister.resx">
+      <DependentUpon>frmCustRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmployee.resx">
       <DependentUpon>frmEmployee.cs</DependentUpon>
@@ -143,14 +206,26 @@
     <EmbeddedResource Include="frmForgotPassword.resx">
       <DependentUpon>frmForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="frmEmpLogin.resx">
+      <DependentUpon>frmEmpLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginButtons.resx">
+      <DependentUpon>frmLoginButtons.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmManager.resx">
+      <DependentUpon>frmManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManLogin.resx">
+      <DependentUpon>frmManLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuViewer.resx">
+      <DependentUpon>frmMenuViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOrder.resx">
       <DependentUpon>frmOrder.cs</DependentUpon>
@@ -170,7 +245,7 @@
     </None>
     <None Include="inew2330su21DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>inew2330su21DataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>inew2330su21DataSet5.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="inew2330su21DataSet.xss">
@@ -241,6 +316,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

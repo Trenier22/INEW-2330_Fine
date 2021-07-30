@@ -48,9 +48,6 @@
             this.orderDetailsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.orderDetailsTableAdapter2 = new INEW2330_FineDining.inew2330su21DataSet4TableAdapters.OrderDetailsTableAdapter();
             this.dgvOrders = new System.Windows.Forms.DataGridView();
-            this.detailIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.detailQuantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DetailCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource)).BeginInit();
@@ -65,7 +62,7 @@
             // 
             this.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTotal.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(91, 603);
+            this.lblTotal.Location = new System.Drawing.Point(108, 443);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(113, 30);
@@ -75,7 +72,7 @@
             // 
             this.btnExit.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnExit.Location = new System.Drawing.Point(438, 721);
+            this.btnExit.Location = new System.Drawing.Point(438, 561);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(89, 54);
@@ -88,7 +85,7 @@
             // 
             this.btnViewCart.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewCart.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnViewCart.Location = new System.Drawing.Point(287, 721);
+            this.btnViewCart.Location = new System.Drawing.Point(287, 561);
             this.btnViewCart.Margin = new System.Windows.Forms.Padding(2);
             this.btnViewCart.Name = "btnViewCart";
             this.btnViewCart.Size = new System.Drawing.Size(89, 54);
@@ -101,7 +98,7 @@
             // 
             this.btnCart.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCart.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnCart.Location = new System.Drawing.Point(358, 658);
+            this.btnCart.Location = new System.Drawing.Point(358, 498);
             this.btnCart.Margin = new System.Windows.Forms.Padding(2);
             this.btnCart.Name = "btnCart";
             this.btnCart.Size = new System.Drawing.Size(100, 54);
@@ -115,7 +112,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label3.Location = new System.Drawing.Point(343, 603);
+            this.label3.Location = new System.Drawing.Point(343, 443);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 52);
@@ -151,7 +148,7 @@
             this.pictureBox1.Image = global::INEW2330_FineDining.Properties.Resources.Menu;
             this.pictureBox1.Location = new System.Drawing.Point(-23, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(837, 812);
+            this.pictureBox1.Size = new System.Drawing.Size(837, 648);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
@@ -162,7 +159,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label5.Location = new System.Drawing.Point(34, 603);
+            this.label5.Location = new System.Drawing.Point(51, 443);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 29);
@@ -214,42 +211,18 @@
             // 
             // dgvOrders
             // 
-            this.dgvOrders.AutoGenerateColumns = false;
             this.dgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.detailIDDataGridViewTextBoxColumn,
-            this.detailQuantityDataGridViewTextBoxColumn,
-            this.DetailCost});
-            this.dgvOrders.DataSource = this.orderDetailsBindingSource2;
-            this.dgvOrders.Location = new System.Drawing.Point(29, 157);
+            this.dgvOrders.Location = new System.Drawing.Point(29, 148);
             this.dgvOrders.Name = "dgvOrders";
             this.dgvOrders.RowHeadersWidth = 51;
-            this.dgvOrders.Size = new System.Drawing.Size(742, 414);
+            this.dgvOrders.Size = new System.Drawing.Size(742, 281);
             this.dgvOrders.TabIndex = 39;
-            // 
-            // detailIDDataGridViewTextBoxColumn
-            // 
-            this.detailIDDataGridViewTextBoxColumn.DataPropertyName = "DetailID";
-            this.detailIDDataGridViewTextBoxColumn.HeaderText = "DetailID";
-            this.detailIDDataGridViewTextBoxColumn.Name = "detailIDDataGridViewTextBoxColumn";
-            // 
-            // detailQuantityDataGridViewTextBoxColumn
-            // 
-            this.detailQuantityDataGridViewTextBoxColumn.DataPropertyName = "DetailQuantity";
-            this.detailQuantityDataGridViewTextBoxColumn.HeaderText = "DetailQuantity";
-            this.detailQuantityDataGridViewTextBoxColumn.Name = "detailQuantityDataGridViewTextBoxColumn";
-            // 
-            // DetailCost
-            // 
-            this.DetailCost.DataPropertyName = "DetailCost";
-            this.DetailCost.HeaderText = "DetailCost";
-            this.DetailCost.Name = "DetailCost";
             // 
             // frmCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 809);
+            this.ClientSize = new System.Drawing.Size(800, 644);
             this.Controls.Add(this.dgvOrders);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblTotal);
@@ -261,6 +234,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmCart";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmCart";
             this.Load += new System.EventHandler(this.frmCart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -296,8 +270,5 @@
         private System.Windows.Forms.BindingSource orderDetailsBindingSource2;
         private inew2330su21DataSet4TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter2;
         private System.Windows.Forms.DataGridView dgvOrders;
-        private System.Windows.Forms.DataGridViewTextBoxColumn detailIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn detailQuantityDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DetailCost;
     }
 }

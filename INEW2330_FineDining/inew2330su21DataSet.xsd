@@ -35,7 +35,16 @@
               <Mapping SourceColumn="MerchDescription" DataSetColumn="MerchDescription" />
               <Mapping SourceColumn="MerchCost" DataSetColumn="MerchCost" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="inew2330su21ConnectionString (Settings)" DbObjectName="inew2330su21.group2su212330.Merchandise" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MerchID, MerchName, MerchDescription, MerchCost FROM group2su212330.Merchandise</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />

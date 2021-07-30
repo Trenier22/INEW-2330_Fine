@@ -21,8 +21,10 @@ namespace INEW2330_FineDining
         {
             // TODO: This line of code loads data into the 'inew2330su21DataSet1.Merchandise' table. You can move, or remove it, as needed.
             this.merchandiseTableAdapter1.Fill(this.inew2330su21DataSet1.Merchandise);
-            label1.Parent = pictureBox1;
-            label2.Parent = pictureBox1;
+            label3.Parent = pictureBox2;
+            label4.Parent = pictureBox2;
+
+            ProgOps.DatabaseCommand(dataGridView2, "SELECT MerchID, MerchName, MerchDescription, CAST(MerchCost AS numeric(15, 2)) FROM group2su212330.Merchandise");
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -53,6 +55,16 @@ namespace INEW2330_FineDining
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            CrystalReports.crptMenu menu = new CrystalReports.crptMenu();
+            menu.SetDatabaseLogon("group2su212330", "2547258");
+            frmViewer menuViewer = new frmViewer();
+            menuViewer.crvMenuViewer.ReportSource = null;
+            menuViewer.crvMenuViewer.ReportSource = menu;
+            menuViewer.Show();
         }
     }
 }

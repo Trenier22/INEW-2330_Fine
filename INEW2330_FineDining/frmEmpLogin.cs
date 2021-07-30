@@ -11,9 +11,11 @@ using System.Data.SqlClient;
 
 namespace INEW2330_FineDining
 {
-    public partial class frmLogin : Form
+    public partial class frmEmpLogin : Form
     {
-        public frmLogin()
+        
+
+        public frmEmpLogin()
         {
             InitializeComponent();
         }
@@ -91,8 +93,6 @@ namespace INEW2330_FineDining
             if (dt.Rows[0][0].ToString() == "1")
             {
                 this.Hide();
-                frmEmployee emp = new frmEmployee();
-                emp.ShowDialog();
             }
             else
             {
@@ -109,6 +109,18 @@ namespace INEW2330_FineDining
         private void btnExit_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+
+        public string MyValue
+        {
+            get { return tbxUsername.Text; }
+        }
+        
+
+        private void tbxUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

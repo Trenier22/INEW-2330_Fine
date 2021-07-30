@@ -143,12 +143,12 @@
             this.lblLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblLogin.Font = new System.Drawing.Font("Baskerville Old Face", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblLogin.Location = new System.Drawing.Point(518, 9);
+            this.lblLogin.Location = new System.Drawing.Point(425, 9);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblLogin.Size = new System.Drawing.Size(64, 24);
+            this.lblLogin.Size = new System.Drawing.Size(162, 24);
             this.lblLogin.TabIndex = 11;
-            this.lblLogin.Text = "Login";
+            this.lblLogin.Text = "Employee Login";
             this.lblLogin.Click += new System.EventHandler(this.lblLogin_Click);
             // 
             // pictureBox1
@@ -160,17 +160,18 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 598);
-            this.Controls.Add(this.lblLogin);
+            this.Controls.Add(this.lblExit);
             this.Controls.Add(this.lblAbout);
             this.Controls.Add(this.lblOrder);
             this.Controls.Add(this.lblMenu);
-            this.Controls.Add(this.lblExit);
+            this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblName);

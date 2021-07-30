@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvOrders = new System.Windows.Forms.DataGridView();
-            this.merchIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.merchNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.merchDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.merchCostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.merchandiseBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.inew2330su21DataSet = new INEW2330_FineDining.inew2330su21DataSet();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +41,10 @@
             this.merchandiseTableAdapter = new INEW2330_FineDining.inew2330su21DataSetTableAdapters.MerchandiseTableAdapter();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.tbxQuantity = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnPlus = new System.Windows.Forms.Button();
+            this.btnMinus = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.merchandiseBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inew2330su21DataSet)).BeginInit();
@@ -54,51 +54,12 @@
             // 
             // dgvOrders
             // 
-            this.dgvOrders.AutoGenerateColumns = false;
             this.dgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.merchIDDataGridViewTextBoxColumn,
-            this.merchNameDataGridViewTextBoxColumn,
-            this.merchDescriptionDataGridViewTextBoxColumn,
-            this.merchCostDataGridViewTextBoxColumn});
-            this.dgvOrders.DataSource = this.merchandiseBindingSource1;
             this.dgvOrders.Location = new System.Drawing.Point(45, 146);
             this.dgvOrders.Name = "dgvOrders";
             this.dgvOrders.RowHeadersWidth = 51;
             this.dgvOrders.Size = new System.Drawing.Size(750, 356);
             this.dgvOrders.TabIndex = 30;
-            // 
-            // merchIDDataGridViewTextBoxColumn
-            // 
-            this.merchIDDataGridViewTextBoxColumn.DataPropertyName = "MerchID";
-            this.merchIDDataGridViewTextBoxColumn.HeaderText = "MerchID";
-            this.merchIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.merchIDDataGridViewTextBoxColumn.Name = "merchIDDataGridViewTextBoxColumn";
-            this.merchIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // merchNameDataGridViewTextBoxColumn
-            // 
-            this.merchNameDataGridViewTextBoxColumn.DataPropertyName = "MerchName";
-            this.merchNameDataGridViewTextBoxColumn.HeaderText = "MerchName";
-            this.merchNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.merchNameDataGridViewTextBoxColumn.Name = "merchNameDataGridViewTextBoxColumn";
-            this.merchNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // merchDescriptionDataGridViewTextBoxColumn
-            // 
-            this.merchDescriptionDataGridViewTextBoxColumn.DataPropertyName = "MerchDescription";
-            this.merchDescriptionDataGridViewTextBoxColumn.HeaderText = "MerchDescription";
-            this.merchDescriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.merchDescriptionDataGridViewTextBoxColumn.Name = "merchDescriptionDataGridViewTextBoxColumn";
-            this.merchDescriptionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // merchCostDataGridViewTextBoxColumn
-            // 
-            this.merchCostDataGridViewTextBoxColumn.DataPropertyName = "MerchCost";
-            this.merchCostDataGridViewTextBoxColumn.HeaderText = "MerchCost";
-            this.merchCostDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.merchCostDataGridViewTextBoxColumn.Name = "merchCostDataGridViewTextBoxColumn";
-            this.merchCostDataGridViewTextBoxColumn.Width = 125;
             // 
             // merchandiseBindingSource1
             // 
@@ -115,7 +76,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Kunstler Script", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label2.Location = new System.Drawing.Point(354, 9);
+            this.label2.Location = new System.Drawing.Point(377, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 79);
             this.label2.TabIndex = 25;
@@ -127,7 +88,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(334, 80);
+            this.label1.Location = new System.Drawing.Point(357, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 45);
             this.label1.TabIndex = 24;
@@ -152,7 +113,7 @@
             this.button1.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.button1.Location = new System.Drawing.Point(457, 623);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 54);
             this.button1.TabIndex = 29;
@@ -165,7 +126,7 @@
             this.button2.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.button2.Location = new System.Drawing.Point(306, 623);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(89, 54);
             this.button2.TabIndex = 28;
@@ -182,7 +143,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnAdd.Location = new System.Drawing.Point(381, 559);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(89, 54);
             this.btnAdd.TabIndex = 27;
@@ -203,12 +164,59 @@
             this.label3.Text = "Click on Item in list above";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tbxQuantity
+            // 
+            this.tbxQuantity.Location = new System.Drawing.Point(167, 568);
+            this.tbxQuantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxQuantity.Name = "tbxQuantity";
+            this.tbxQuantity.Size = new System.Drawing.Size(34, 20);
+            this.tbxQuantity.TabIndex = 31;
+            this.tbxQuantity.Text = "0";
+            this.tbxQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label4.Location = new System.Drawing.Point(118, 505);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 52);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "Quantity of selected item";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnPlus
+            // 
+            this.btnPlus.Location = new System.Drawing.Point(206, 566);
+            this.btnPlus.Name = "btnPlus";
+            this.btnPlus.Size = new System.Drawing.Size(18, 23);
+            this.btnPlus.TabIndex = 33;
+            this.btnPlus.Text = "+";
+            this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
+            // 
+            // btnMinus
+            // 
+            this.btnMinus.Location = new System.Drawing.Point(144, 566);
+            this.btnMinus.Name = "btnMinus";
+            this.btnMinus.Size = new System.Drawing.Size(18, 23);
+            this.btnMinus.TabIndex = 34;
+            this.btnMinus.Text = "-";
+            this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
+            // 
             // frmOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(829, 704);
+            this.Controls.Add(this.btnMinus);
+            this.Controls.Add(this.btnPlus);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.tbxQuantity);
             this.Controls.Add(this.dgvOrders);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -217,8 +225,9 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmOrder";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Order";
             this.Load += new System.EventHandler(this.frmOrder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();
@@ -234,10 +243,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvOrders;
-        private System.Windows.Forms.DataGridViewTextBoxColumn merchIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn merchNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn merchDescriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn merchCostDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource merchandiseBindingSource1;
         private inew2330su21DataSet inew2330su21DataSet;
         private System.Windows.Forms.Label label2;
@@ -249,5 +254,9 @@
         private inew2330su21DataSetTableAdapters.MerchandiseTableAdapter merchandiseTableAdapter;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tbxQuantity;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnPlus;
+        private System.Windows.Forms.Button btnMinus;
     }
 }
