@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Gastronomie serves rich delicacies and appetizing entrees. At Restaurant Gastronomie,  you will choose from an extensive and varied menu of items. Our cooks will  impress you from start to finish with our signature fried asparagus and prime new york strip . Here, Gastronomie enhanced to the finest detail. Gastronomie pork chops and steaks are of unparalleled quality, with exceptional marbling for the best texture. And on our menu, you'll find your favorite appetizers – from filet mignon to crab cakes– for fine dining that's exquisite every time.</value>
+  </data>
 </root>

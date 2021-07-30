@@ -20,6 +20,8 @@ namespace INEW2330_FineDining
         private void frmAboutUs_Load(object sender, EventArgs e)
         {
             label1.Parent = pictureBox1;
+            label2.Parent = pictureBox1;
+            label3.Parent = pictureBox1;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
