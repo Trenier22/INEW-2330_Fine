@@ -62,15 +62,15 @@
             this.label3.Location = new System.Drawing.Point(33, 260);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 46);
+            this.label3.Size = new System.Drawing.Size(129, 67);
             this.label3.TabIndex = 51;
-            this.label3.Text = "Enter Email";
+            this.label3.Text = "Enter Verification Code";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tbxVer
             // 
             this.tbxVer.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxVer.Location = new System.Drawing.Point(171, 268);
+            this.tbxVer.Location = new System.Drawing.Point(171, 278);
             this.tbxVer.Margin = new System.Windows.Forms.Padding(2);
             this.tbxVer.Name = "tbxVer";
             this.tbxVer.PasswordChar = '*';
@@ -81,7 +81,7 @@
             // 
             this.btnVerify.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerify.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnVerify.Location = new System.Drawing.Point(171, 331);
+            this.btnVerify.Location = new System.Drawing.Point(241, 327);
             this.btnVerify.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerify.Name = "btnVerify";
             this.btnVerify.Size = new System.Drawing.Size(108, 32);
@@ -94,10 +94,10 @@
             // 
             this.btnSendCode.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSendCode.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnSendCode.Location = new System.Drawing.Point(117, 187);
+            this.btnSendCode.Location = new System.Drawing.Point(241, 177);
             this.btnSendCode.Margin = new System.Windows.Forms.Padding(2);
             this.btnSendCode.Name = "btnSendCode";
-            this.btnSendCode.Size = new System.Drawing.Size(232, 32);
+            this.btnSendCode.Size = new System.Drawing.Size(108, 54);
             this.btnSendCode.TabIndex = 48;
             this.btnSendCode.Text = "Send  Code";
             this.btnSendCode.UseVisualStyleBackColor = true;

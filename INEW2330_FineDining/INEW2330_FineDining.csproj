@@ -164,34 +164,6 @@
     <Compile Include="frmResetPassword.Designer.cs">
       <DependentUpon>frmResetPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="inew2330su21DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>inew2330su21DataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="inew2330su21DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>inew2330su21DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="inew2330su21DataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>inew2330su21DataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="inew2330su21DataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>inew2330su21DataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="inew2330su21DataSet4.cs">
-      <DependentUpon>inew2330su21DataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="inew2330su21DataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>inew2330su21DataSet4.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ProgOps.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -261,61 +233,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="inew2330su21DataSet.xsc">
-      <DependentUpon>inew2330su21DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>inew2330su21DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="inew2330su21DataSet.xss">
-      <DependentUpon>inew2330su21DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet1.xsc">
-      <DependentUpon>inew2330su21DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>inew2330su21DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="inew2330su21DataSet1.xss">
-      <DependentUpon>inew2330su21DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet2.xsc">
-      <DependentUpon>inew2330su21DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>inew2330su21DataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="inew2330su21DataSet2.xss">
-      <DependentUpon>inew2330su21DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet3.xsc">
-      <DependentUpon>inew2330su21DataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>inew2330su21DataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="inew2330su21DataSet3.xss">
-      <DependentUpon>inew2330su21DataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet4.xsc">
-      <DependentUpon>inew2330su21DataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="inew2330su21DataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>inew2330su21DataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="inew2330su21DataSet4.xss">
-      <DependentUpon>inew2330su21DataSet4.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

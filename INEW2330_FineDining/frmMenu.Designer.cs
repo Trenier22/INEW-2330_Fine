@@ -35,11 +35,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.merchandiseBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.merchandiseTableAdapter = new INEW2330_FineDining.inew2330su21DataSetTableAdapters.MerchandiseTableAdapter();
+            //this.merchandiseTableAdapter = new INEW2330_FineDining.inew2330su21DataSetTableAdapters.MerchandiseTableAdapter();
             this.merchandiseBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.merchandiseBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.merchandiseTableAdapter1 = new INEW2330_FineDining.inew2330su21DataSet1TableAdapters.MerchandiseTableAdapter();
+            //this.merchandiseTableAdapter1 = new INEW2330_FineDining.inew2330su21DataSet1TableAdapters.MerchandiseTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -109,7 +109,7 @@
             // 
             // merchandiseTableAdapter
             // 
-            this.merchandiseTableAdapter.ClearBeforeFill = true;
+            //this.merchandiseTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridView2
             // 
@@ -122,7 +122,7 @@
             // 
             // merchandiseTableAdapter1
             // 
-            this.merchandiseTableAdapter1.ClearBeforeFill = true;
+            //this.merchandiseTableAdapter1.ClearBeforeFill = true;
             // 
             // button1
             // 
@@ -185,11 +185,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.BindingSource merchandiseBindingSource;
-        private inew2330su21DataSetTableAdapters.MerchandiseTableAdapter merchandiseTableAdapter;
+        //private inew2330su21DataSetTableAdapters.MerchandiseTableAdapter merchandiseTableAdapter;
         private System.Windows.Forms.BindingSource merchandiseBindingSource1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingSource merchandiseBindingSource2;
-        private inew2330su21DataSet1TableAdapters.MerchandiseTableAdapter merchandiseTableAdapter1;
+        //private inew2330su21DataSet1TableAdapters.MerchandiseTableAdapter merchandiseTableAdapter1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnPrint;
     }

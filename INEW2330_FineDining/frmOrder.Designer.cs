@@ -37,7 +37,7 @@
             this.merchandiseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.merchandiseTableAdapter = new INEW2330_FineDining.inew2330su21DataSetTableAdapters.MerchandiseTableAdapter();
+            //this.merchandiseTableAdapter = new INEW2330_FineDining.inew2330su21DataSetTableAdapters.MerchandiseTableAdapter();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tbxQuantity = new System.Windows.Forms.TextBox();
@@ -124,7 +124,7 @@
             // 
             // merchandiseTableAdapter
             // 
-            this.merchandiseTableAdapter.ClearBeforeFill = true;
+            //this.merchandiseTableAdapter.ClearBeforeFill = true;
             // 
             // btnAdd
             // 
@@ -237,7 +237,7 @@
         private System.Windows.Forms.BindingSource merchandiseBindingSource;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private inew2330su21DataSetTableAdapters.MerchandiseTableAdapter merchandiseTableAdapter;
+        //private inew2330su21DataSetTableAdapters.MerchandiseTableAdapter merchandiseTableAdapter;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbxQuantity;

@@ -39,11 +39,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.orderDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.orderDetailsTableAdapter = new INEW2330_FineDining.inew2330su21DataSet2TableAdapters.OrderDetailsTableAdapter();
+            //this.orderDetailsTableAdapter = new INEW2330_FineDining.inew2330su21DataSet2TableAdapters.OrderDetailsTableAdapter();
             this.orderDetailsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.orderDetailsTableAdapter1 = new INEW2330_FineDining.inew2330su21DataSet3TableAdapters.OrderDetailsTableAdapter();
+            //this.orderDetailsTableAdapter1 = new INEW2330_FineDining.inew2330su21DataSet3TableAdapters.OrderDetailsTableAdapter();
             this.orderDetailsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.orderDetailsTableAdapter2 = new INEW2330_FineDining.inew2330su21DataSet4TableAdapters.OrderDetailsTableAdapter();
+            //this.orderDetailsTableAdapter2 = new INEW2330_FineDining.inew2330su21DataSet4TableAdapters.OrderDetailsTableAdapter();
             this.dgvOrders = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource)).BeginInit();
@@ -163,15 +163,15 @@
             // 
             // orderDetailsTableAdapter
             // 
-            this.orderDetailsTableAdapter.ClearBeforeFill = true;
+            //this.orderDetailsTableAdapter.ClearBeforeFill = true;
             // 
             // orderDetailsTableAdapter1
             // 
-            this.orderDetailsTableAdapter1.ClearBeforeFill = true;
+            //this.orderDetailsTableAdapter1.ClearBeforeFill = true;
             // 
             // orderDetailsTableAdapter2
             // 
-            this.orderDetailsTableAdapter2.ClearBeforeFill = true;
+            //this.orderDetailsTableAdapter2.ClearBeforeFill = true;
             // 
             // dgvOrders
             // 
@@ -222,11 +222,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.BindingSource orderDetailsBindingSource;
-        private inew2330su21DataSet2TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter;
+        //private inew2330su21DataSet2TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter;
         private System.Windows.Forms.BindingSource orderDetailsBindingSource1;
-        private inew2330su21DataSet3TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter1;
+        //private inew2330su21DataSet3TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter1;
         private System.Windows.Forms.BindingSource orderDetailsBindingSource2;
-        private inew2330su21DataSet4TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter2;
+        //private inew2330su21DataSet4TableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter2;
         private System.Windows.Forms.DataGridView dgvOrders;
     }
 }

@@ -27,6 +27,7 @@ namespace INEW2330_FineDining
             label1.Parent = pictureBox1;
             label2.Parent = pictureBox1;
             label3.Parent = pictureBox1;
+            label5.Parent = pictureBox1;
         }
 
 
