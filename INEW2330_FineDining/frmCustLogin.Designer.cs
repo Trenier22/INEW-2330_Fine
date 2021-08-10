@@ -188,7 +188,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmCustLogin";
-            this.Text = "frmCustomerLogin";
+            this.Text = "Customer Login";
             this.Load += new System.EventHandler(this.frmCustLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

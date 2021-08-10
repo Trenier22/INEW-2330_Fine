@@ -225,7 +225,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmCustPayment";
-            this.Text = "frmCustPayment";
+            this.Text = "Payment";
             this.Load += new System.EventHandler(this.frmCustPayment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

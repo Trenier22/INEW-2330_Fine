@@ -107,7 +107,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmAboutUs";
-            this.Text = "frmAboutUs";
+            this.Text = "About Us";
             this.Load += new System.EventHandler(this.frmAboutUs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

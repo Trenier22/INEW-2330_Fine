@@ -38,7 +38,7 @@ namespace INEW2330_FineDining
             }
             else
             {
-                MessageBox.Show("Invalid Username or Password");
+                MessageBox.Show("Invalid Credit Card Number and CVV");
             }
         }
 

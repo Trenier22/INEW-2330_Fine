@@ -199,7 +199,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmCart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmCart";
+            this.Text = "Cart";
             this.Load += new System.EventHandler(this.frmCart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource)).EndInit();

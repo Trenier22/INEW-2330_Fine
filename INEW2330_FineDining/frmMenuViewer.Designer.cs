@@ -50,7 +50,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crvMenuViewer);
             this.Name = "frmViewer";
-            this.Text = "frmMenuViewer";
+            this.Text = "View";
             this.ResumeLayout(false);
 
         }
