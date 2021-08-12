@@ -20,26 +20,41 @@ namespace INEW2330_FineDining
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            String custCreditCard;
-            String custCVV;
-            custCreditCard = tbxCreditCard.Text;
-            custCVV = tbxCVV.Text;
+            string FirstName = tbxUsername.Text;
+            string LastName = tbxPassword.Text;
+            string CreditCardNum = tbxCreditCard.Text;
+            string CVV = tbxCVV.Text;
 
-            SqlConnection _cntDatabase = new SqlConnection("Server=cstnt.tstc.edu;Database= inew2330su21;" +
-                "User Id=group2su212330;password=2547258");
-
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM group2su212330.Customer WHERE CustCreditCard = '" + custCreditCard
-                + "' AND CustCVV = '" + custCVV + "'", _cntDatabase);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            if (dt.Rows[0][0].ToString() == "1")
+            if(FirstName.All(c => char.IsLetter(c)) && LastName.All(c => char.IsLetter(c)) && CreditCardNum.All(c => char.IsDigit(c)) && CVV.All(c => char.IsDigit(c)))
             {
-                this.Hide();
+                String custCreditCard;
+                String custCVV;
+                custCreditCard = tbxCreditCard.Text;
+                custCVV = tbxCVV.Text;
+
+                SqlConnection _cntDatabase = new SqlConnection("Server=cstnt.tstc.edu;Database= inew2330su21;" +
+                    "User Id=group2su212330;password=2547258");
+
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM group2su212330.Customer WHERE CustCreditCard = '" + custCreditCard
+                    + "' AND CustCVV = '" + custCVV + "'", _cntDatabase);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                if (dt.Rows[0][0].ToString() == "1")
+                {
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Credit Card Number or CVV");
+                }
             }
             else
             {
-                MessageBox.Show("Invalid Credit Card Number and CVV");
+                MessageBox.Show("Invalid character in a textbox");
             }
+
+            
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -66,6 +81,7 @@ namespace INEW2330_FineDining
             label4.Parent = pictureBox1;
             label5.Parent = pictureBox1;
             label6.Parent = pictureBox1;
+            label7.Parent = pictureBox1;
         }
     }
 }

@@ -30,7 +30,7 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnPay = new System.Windows.Forms.Button();
             this.tbxPassword = new System.Windows.Forms.TextBox();
             this.tbxUsername = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,6 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button2.Location = new System.Drawing.Point(175, 447);
+            this.button2.Location = new System.Drawing.Point(175, 523);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(89, 32);
@@ -62,7 +63,7 @@
             // 
             this.btnExit.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnExit.Location = new System.Drawing.Point(175, 492);
+            this.btnExit.Location = new System.Drawing.Point(175, 568);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(89, 32);
@@ -71,18 +72,18 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnLogin
+            // btnPay
             // 
-            this.btnLogin.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnLogin.Location = new System.Drawing.Point(175, 399);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(89, 32);
-            this.btnLogin.TabIndex = 44;
-            this.btnLogin.Text = "Pay";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnPay.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPay.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnPay.Location = new System.Drawing.Point(175, 475);
+            this.btnPay.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPay.Name = "btnPay";
+            this.btnPay.Size = new System.Drawing.Size(89, 32);
+            this.btnPay.TabIndex = 44;
+            this.btnPay.Text = "Pay";
+            this.btnPay.UseVisualStyleBackColor = true;
+            this.btnPay.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // tbxPassword
             // 
@@ -154,7 +155,7 @@
             // tbxCreditCard
             // 
             this.tbxCreditCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxCreditCard.Location = new System.Drawing.Point(184, 221);
+            this.tbxCreditCard.Location = new System.Drawing.Point(184, 339);
             this.tbxCreditCard.Margin = new System.Windows.Forms.Padding(2);
             this.tbxCreditCard.Name = "tbxCreditCard";
             this.tbxCreditCard.Size = new System.Drawing.Size(200, 28);
@@ -163,7 +164,7 @@
             // tbxCVV
             // 
             this.tbxCVV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxCVV.Location = new System.Drawing.Point(184, 280);
+            this.tbxCVV.Location = new System.Drawing.Point(184, 398);
             this.tbxCVV.Margin = new System.Windows.Forms.Padding(2);
             this.tbxCVV.Name = "tbxCVV";
             this.tbxCVV.Size = new System.Drawing.Size(200, 28);
@@ -174,7 +175,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label5.Location = new System.Drawing.Point(51, 272);
+            this.label5.Location = new System.Drawing.Point(47, 390);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 46);
@@ -187,7 +188,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label6.Location = new System.Drawing.Point(51, 214);
+            this.label6.Location = new System.Drawing.Point(47, 332);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(129, 45);
@@ -200,23 +201,37 @@
             this.pictureBox1.Image = global::INEW2330_FineDining.Properties.Resources.Menu;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(436, 548);
+            this.pictureBox1.Size = new System.Drawing.Size(436, 621);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label7.Location = new System.Drawing.Point(113, 238);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(229, 68);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "Enter Credit card Number Connected to Customer Account";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmCustPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 549);
+            this.ClientSize = new System.Drawing.Size(437, 622);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbxCVV);
             this.Controls.Add(this.tbxCreditCard);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnPay);
             this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.tbxUsername);
             this.Controls.Add(this.label4);
@@ -237,7 +252,7 @@
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.TextBox tbxPassword;
         private System.Windows.Forms.TextBox tbxUsername;
         private System.Windows.Forms.Label label4;
@@ -249,5 +264,6 @@
         private System.Windows.Forms.TextBox tbxCVV;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -23,6 +23,22 @@ namespace INEW2330_FineDining
         //add the data tables
         private static DataTable _dtResultsTable = new DataTable();
 
+        //add command object
+        private static SqlCommand _sqlEmployeesCommand;
+        //add the data adapter
+        private static SqlDataAdapter _daEmployees = new SqlDataAdapter();
+        //add the data tables
+        public static DataTable _dtEmployeesTable = new DataTable();
+
+        //add command object
+        private static SqlCommand _sqlCustomersCommand;
+        //add the data adapter
+        private static SqlDataAdapter _daCustomers = new SqlDataAdapter();
+        //add the data tables
+        public static DataTable _dtCustomersTable = new DataTable();
+
+        private static int counter = 0;
+
 
         public static void OpenDatabase()
         {
@@ -33,6 +49,11 @@ namespace INEW2330_FineDining
             //message stating connection was successful
             MessageBox.Show("Conection to db was opened successfully",
                 "Database Connection", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        public static int Counter
+        {
+            get { return counter; }
+            set { counter = value; }
         }
 
         public static void CloseDatabase()
@@ -103,7 +124,49 @@ namespace INEW2330_FineDining
             _daResults.Dispose();
             _dtResultsTable.Dispose();
         }
+
+        public static void EmpLoginCommand(TextBox tbxUsername, TextBox tbxPassword)
+        {
+            try
+            {
+                string query = "SELECT * FROM group2su212330.Employees WHERE EmpLoginUsername = '" + tbxUsername.Text.Trim() + "' AND EmpLoginPassword = '" + tbxPassword.Text.Trim() + "'";
+                _sqlEmployeesCommand = new SqlCommand(query, _cntDatabase);
+                _daEmployees = new SqlDataAdapter();
+                _daEmployees.SelectCommand = _sqlEmployeesCommand;
+                _dtEmployeesTable = new DataTable();
+                _daEmployees.Fill(_dtEmployeesTable);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "102, Error in processing EmployeeLogin SQL Statement.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            _sqlEmployeesCommand.Dispose();
+            _daEmployees.Dispose();
+            _dtEmployeesTable.Dispose();
+        }
+
+        public static void CustLoginCommand(TextBox tbxUsername, TextBox tbxPassword)
+        {
+            try
+            {
+                string query = "SELECT * FROM group2su212330.Customer WHERE CustLoginUsername = '" + tbxUsername.Text.Trim() + "' AND CustLoginPassword = '" + tbxPassword.Text.Trim() + "'";
+                _sqlCustomersCommand = new SqlCommand(query, _cntDatabase);
+                _daCustomers = new SqlDataAdapter();
+                _daCustomers.SelectCommand = _sqlCustomersCommand;
+                _dtCustomersTable = new DataTable();
+                _daCustomers.Fill(_dtCustomersTable);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "102, Error in processing EmployeeLogin SQL Statement.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            _sqlCustomersCommand.Dispose();
+            _daCustomers.Dispose();
+            _dtCustomersTable.Dispose();
+        }
     }
+
+    
 
 
 }

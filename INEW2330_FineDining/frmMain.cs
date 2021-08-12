@@ -27,9 +27,14 @@ namespace INEW2330_FineDining
             lblOrder.Parent = pictureBox1;
             lblAbout.Parent = pictureBox1;
             lblLogin.Parent = pictureBox1;
-            ProgOps.OpenDatabase();
+            
             ProgOps.DatabaseSQLCommand("UPDATE inew2330su21.group2su212330.OrderDetails SET " +
                     "DetailQuantity = 0");
+            if(ProgOps.Counter == 0)
+            {
+                ProgOps.OpenDatabase();
+            }
+            ProgOps.Counter++;
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -69,7 +74,10 @@ namespace INEW2330_FineDining
 
         private void lblLogin_Click(object sender, EventArgs e)
         {
-            frmLoginButtons login = new frmLoginButtons();
+            //frmLoginButtons login = new frmLoginButtons();
+            //login.ShowDialog();
+
+            frmLogin login = new frmLogin();
             login.ShowDialog();
         }
 

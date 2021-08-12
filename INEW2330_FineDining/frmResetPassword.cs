@@ -33,20 +33,27 @@ namespace INEW2330_FineDining
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            SqlConnection _cntDatabase = new SqlConnection("Server=cstnt.tstc.edu;Database= inew2330su21;" +
-               "User Id=group2su212330;password=2547258");
-
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM group2su212330.Employees WHERE EmpLoginUsername = '" + tbxUsername.Text + "'", _cntDatabase);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            if (dt.Rows[0][0].ToString() == "1")
+            if (tbxPassword.Text == tbxRePassword.Text)
             {
-                ProgOps.DatabaseSQLCommand("UPDATE group2su212330.Employees SET EmpLoginPassword = '" + tbxPassword.Text + "' WHERE EmpLoginUsername = '" + tbxUsername.Text + "'");
-                this.Close();
+                SqlConnection _cntDatabase = new SqlConnection("Server=cstnt.tstc.edu;Database= inew2330su21;" +
+                   "User Id=group2su212330;password=2547258");
+
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM group2su212330.Employees WHERE EmpLoginUsername = '" + tbxUsername.Text + "'", _cntDatabase);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                if (dt.Rows[0][0].ToString() == "1")
+                {
+                    ProgOps.DatabaseSQLCommand("UPDATE group2su212330.Employees SET EmpLoginPassword = '" + tbxPassword.Text + "' WHERE EmpLoginUsername = '" + tbxUsername.Text + "'");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Username");
+                }
             }
             else
             {
-                MessageBox.Show("Invalid Username");
+                MessageBox.Show("Password feilds do not match.");
             }
         }
     }

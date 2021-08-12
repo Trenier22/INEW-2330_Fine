@@ -81,27 +81,5 @@ namespace INEW2330_FineDining
                 MessageBox.Show("wrong code");
             }
         }
-
-        //private void button1_Click_1(object sender, EventArgs e)
-        //{
-        //    SqlConnection _cntDatabase = new SqlConnection("Server=cstnt.tstc.edu;Database= inew2330su21;" +
-        //       "User Id=group2su212330;password=2547258");
-
-        //    SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM group2su212330.Employees WHERE EmpLoginUsername = '" + tbxUsername.Text + "'", _cntDatabase);
-        //    DataTable dt = new DataTable();
-        //    sda.Fill(dt);
-        //    if (dt.Rows[0][0].ToString() == "1")
-        //    {
-        //        ProgOps.DatabaseSQLCommand("UPDATE group2su212330.Employees SET EmpLoginPassword = '" + tbxPassword.Text + "' WHERE EmpLoginUsername = '" + tbxUsername.Text + "'");
-        //        this.Close();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Invalid Username");
-        //    }
-        //}
-
-
-
     }
 }
