@@ -47,8 +47,8 @@ namespace INEW2330_FineDining
                 MailMessage message = new MailMessage();
                 to = (tbxEmail.Text).ToString();
 
-                from = "stephenkolls@gmail.com";
-                pass = "smurff2387";
+                from = "";
+                pass = "";
                 messageBody = "your reset code is " + randomCode;
                 message.To.Add(to);
                 message.From = new MailAddress(from);
