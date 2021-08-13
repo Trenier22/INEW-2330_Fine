@@ -86,6 +86,7 @@
             this.btnPrint.TabIndex = 62;
             this.btnPrint.Text = "Print Orders";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click_1);
             // 
             // dgvManager
             // 

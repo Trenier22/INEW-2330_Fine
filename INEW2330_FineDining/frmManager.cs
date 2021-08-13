@@ -93,5 +93,15 @@ namespace INEW2330_FineDining
                 
             }
         }
+
+        private void btnPrint_Click_1(object sender, EventArgs e)
+        {
+            CrystalReports.crptOrders order = new CrystalReports.crptOrders();
+            order.SetDatabaseLogon("group2su212330", "2547258");
+            frmViewer menuViewer = new frmViewer();
+            menuViewer.crvMenuViewer.ReportSource = null;
+            menuViewer.crvMenuViewer.ReportSource = order;
+            menuViewer.Show();
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace INEW2330_FineDining
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new frmEmployee());
         }
     }
 }

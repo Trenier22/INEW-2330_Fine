@@ -21,7 +21,6 @@ namespace INEW2330_FineDining
         {
             // TODO: This line of code loads data into the 'inew2330su21DataSet1.Merchandise' table. You can move, or remove it, as needed.
             label1.Parent = pictureBox1;
-            label2.Parent = pictureBox1;
             label3.Parent = pictureBox1;
             //var cust = new frmCustLogin();
             //cust.ShowDialog(this);

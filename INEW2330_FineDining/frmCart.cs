@@ -114,7 +114,6 @@ namespace INEW2330_FineDining
                                  where row.Cells[2].FormattedValue.ToString() != string.Empty
                                  select Convert.ToDecimal(row.Cells[2].FormattedValue)).Sum().ToString();
                 label1.Parent = pictureBox1;
-                label2.Parent = pictureBox1;
                 label3.Parent = pictureBox1;
                 label5.Parent = pictureBox1;
             }
@@ -133,7 +132,6 @@ namespace INEW2330_FineDining
         {
                 ProgOps.DatabaseCommand(dgvOrders, "SELECT DetailID, DetailQuantity, CAST((DetailCost * DetailQuantity) AS NUMERIC(15, 2))AS DetailTotal FROM group2su212330.OrderDetails WHERE DetailQuantity > 0");
                 label1.Parent = pictureBox1;
-                label2.Parent = pictureBox1;
                 label3.Parent = pictureBox1;
                 label5.Parent = pictureBox1;
                 lblTotal.Text = (from DataGridViewRow row in dgvOrders.Rows
@@ -162,9 +160,8 @@ namespace INEW2330_FineDining
             }
             catch (Exception)
             {
-                MessageBox.Show("Error\n" + "Customers must all information into the text boxes", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            }
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {

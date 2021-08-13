@@ -26,31 +26,18 @@ namespace INEW2330_FineDining
             lblMenu.Parent = pictureBox1;
             lblOrder.Parent = pictureBox1;
             lblAbout.Parent = pictureBox1;
-            lblLogin.Parent = pictureBox1;
+
             
             ProgOps.DatabaseSQLCommand("UPDATE inew2330su21.group2su212330.OrderDetails SET " +
                     "DetailQuantity = 0");
-            if(ProgOps.Counter == 0)
-            {
-                ProgOps.OpenDatabase();
-            }
-            ProgOps.Counter++;
+            
         }
 
-        private void btnMenu_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void btnOrder_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label3_Click(object sender, EventArgs e)
         {
-            ProgOps.CloseDatabase();
-            Application.Exit();
+            this.Close();
         }
 
         private void lblMenu_Click(object sender, EventArgs e)

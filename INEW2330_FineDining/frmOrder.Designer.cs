@@ -31,13 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.dgvOrders = new System.Windows.Forms.DataGridView();
             this.merchandiseBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.merchandiseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            //this.merchandiseTableAdapter = new INEW2330_FineDining.inew2330su21DataSetTableAdapters.MerchandiseTableAdapter();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tbxQuantity = new System.Windows.Forms.TextBox();
@@ -59,24 +57,13 @@
             this.dgvOrders.Size = new System.Drawing.Size(750, 356);
             this.dgvOrders.TabIndex = 30;
             // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Kunstler Script", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label2.Location = new System.Drawing.Point(377, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 79);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "G";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(357, 80);
+            this.label1.Location = new System.Drawing.Point(358, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 45);
             this.label1.TabIndex = 24;
@@ -121,10 +108,6 @@
             this.button2.Text = "View Cart";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // merchandiseTableAdapter
-            // 
-            //this.merchandiseTableAdapter.ClearBeforeFill = true;
             // 
             // btnAdd
             // 
@@ -206,7 +189,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbxQuantity);
             this.Controls.Add(this.dgvOrders);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -231,7 +213,6 @@
 
         private System.Windows.Forms.DataGridView dgvOrders;
         private System.Windows.Forms.BindingSource merchandiseBindingSource1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.BindingSource merchandiseBindingSource;

@@ -46,7 +46,7 @@
             // 
             this.btnConfirm.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirm.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnConfirm.Location = new System.Drawing.Point(181, 334);
+            this.btnConfirm.Location = new System.Drawing.Point(181, 441);
             this.btnConfirm.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(89, 32);
@@ -97,6 +97,7 @@
             this.tbxPassword.Location = new System.Drawing.Point(181, 194);
             this.tbxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.PasswordChar = '*';
             this.tbxPassword.Size = new System.Drawing.Size(227, 28);
             this.tbxPassword.TabIndex = 46;
             // 
@@ -140,11 +141,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(99, 63);
+            this.label1.Location = new System.Drawing.Point(117, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 27);
+            this.label1.Size = new System.Drawing.Size(240, 27);
             this.label1.TabIndex = 52;
-            this.label1.Text = "FORGOT PASSWORD";
+            this.label1.Text = "RESET PASSWORD";
             // 
             // tbxUsername
             // 
@@ -185,7 +186,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmResetPassword";
-            this.Text = "frmResetPassword";
+            this.Text = "Reset Password";
             this.Load += new System.EventHandler(this.frmResetPassword_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

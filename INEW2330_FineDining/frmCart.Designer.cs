@@ -34,16 +34,12 @@
             this.btnViewCart = new System.Windows.Forms.Button();
             this.btnCart = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.orderDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.orderDetailsTableAdapter = new INEW2330_FineDining.inew2330su21DataSet2TableAdapters.OrderDetailsTableAdapter();
             this.orderDetailsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            //this.orderDetailsTableAdapter1 = new INEW2330_FineDining.inew2330su21DataSet3TableAdapters.OrderDetailsTableAdapter();
             this.orderDetailsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            //this.orderDetailsTableAdapter2 = new INEW2330_FineDining.inew2330su21DataSet4TableAdapters.OrderDetailsTableAdapter();
             this.dgvOrders = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource)).BeginInit();
@@ -114,24 +110,13 @@
             this.label3.Text = "Click on Item in list above";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Kunstler Script", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label2.Location = new System.Drawing.Point(345, 2);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 79);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "G";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(339, 81);
+            this.label1.Location = new System.Drawing.Point(340, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 45);
             this.label1.TabIndex = 30;
@@ -161,18 +146,6 @@
             this.label5.Text = "Total:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // orderDetailsTableAdapter
-            // 
-            //this.orderDetailsTableAdapter.ClearBeforeFill = true;
-            // 
-            // orderDetailsTableAdapter1
-            // 
-            //this.orderDetailsTableAdapter1.ClearBeforeFill = true;
-            // 
-            // orderDetailsTableAdapter2
-            // 
-            //this.orderDetailsTableAdapter2.ClearBeforeFill = true;
-            // 
             // dgvOrders
             // 
             this.dgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -194,7 +167,6 @@
             this.Controls.Add(this.btnViewCart);
             this.Controls.Add(this.btnCart);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmCart";
@@ -217,7 +189,6 @@
         private System.Windows.Forms.Button btnViewCart;
         private System.Windows.Forms.Button btnCart;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;

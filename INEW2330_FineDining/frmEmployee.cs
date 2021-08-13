@@ -26,7 +26,7 @@ namespace INEW2330_FineDining
         private void Employee_Load(object sender, EventArgs e)
         {
             label1.Parent = pictureBox1;
-            var frmlogin = new frmEmpLogin();
+            var frmlogin = new frmLogin();
             frmlogin.ShowDialog(this);
             ProgOps.DatabaseCommand(dgvEmp, "SELECT EmpID, EmpFirstName, EmpLastName, EmpHoursWorked, CAST(EmpHourlyPay AS NUMERIC(15, 2)) AS EmpHourlyPay," +
                 " CAST((EmpHoursWorked * EmpHourlyPay) AS NUMERIC(15, 2))AS EmpNetPay, CAST(((EmpFderalTax * (EmpHoursWorked * EmpHourlyPay)) - " +
@@ -37,7 +37,9 @@ namespace INEW2330_FineDining
 
         private void btnExit_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            frmLogin login = new frmLogin();
+            this.Hide();
+            login.Show();
         }
     }
 }

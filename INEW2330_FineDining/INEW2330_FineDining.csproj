@@ -68,12 +68,6 @@
       <DependentUpon>crptMenu.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="frmCustLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCustLogin.Designer.cs">
-      <DependentUpon>frmCustLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmAboutUs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,23 +104,11 @@
     <Compile Include="frmEmployee.Designer.cs">
       <DependentUpon>frmEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEmpLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEmpLogin.Designer.cs">
-      <DependentUpon>frmEmpLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmLoginButtons.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLoginButtons.Designer.cs">
-      <DependentUpon>frmLoginButtons.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -139,12 +121,6 @@
     </Compile>
     <Compile Include="frmManager.Designer.cs">
       <DependentUpon>frmManager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmManLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmManLogin.Designer.cs">
-      <DependentUpon>frmManLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
@@ -187,9 +163,6 @@
     <EmbeddedResource Include="frmCart.resx">
       <DependentUpon>frmCart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCustLogin.resx">
-      <DependentUpon>frmCustLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmCustPayment.resx">
       <DependentUpon>frmCustPayment.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,23 +175,14 @@
     <EmbeddedResource Include="frmForgotPassword.resx">
       <DependentUpon>frmForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEmpLogin.resx">
-      <DependentUpon>frmEmpLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLoginButtons.resx">
-      <DependentUpon>frmLoginButtons.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManager.resx">
       <DependentUpon>frmManager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmManLogin.resx">
-      <DependentUpon>frmManLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>

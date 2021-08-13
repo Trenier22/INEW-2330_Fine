@@ -35,7 +35,6 @@
             this.lblMenu = new System.Windows.Forms.Label();
             this.lblOrder = new System.Windows.Forms.Label();
             this.lblAbout = new System.Windows.Forms.Label();
-            this.lblLogin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -83,12 +82,12 @@
             this.lblExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblExit.Font = new System.Drawing.Font("Baskerville Old Face", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExit.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblExit.Location = new System.Drawing.Point(840, 9);
+            this.lblExit.Location = new System.Drawing.Point(821, 9);
             this.lblExit.Name = "lblExit";
             this.lblExit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblExit.Size = new System.Drawing.Size(46, 24);
+            this.lblExit.Size = new System.Drawing.Size(61, 24);
             this.lblExit.TabIndex = 7;
-            this.lblExit.Text = "Exit";
+            this.lblExit.Text = "Close";
             this.lblExit.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblMenu
@@ -98,7 +97,7 @@
             this.lblMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblMenu.Font = new System.Drawing.Font("Baskerville Old Face", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenu.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblMenu.Location = new System.Drawing.Point(593, 9);
+            this.lblMenu.Location = new System.Drawing.Point(574, 9);
             this.lblMenu.Name = "lblMenu";
             this.lblMenu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblMenu.Size = new System.Drawing.Size(64, 24);
@@ -113,7 +112,7 @@
             this.lblOrder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblOrder.Font = new System.Drawing.Font("Baskerville Old Face", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOrder.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblOrder.Location = new System.Drawing.Point(663, 9);
+            this.lblOrder.Location = new System.Drawing.Point(644, 9);
             this.lblOrder.Name = "lblOrder";
             this.lblOrder.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblOrder.Size = new System.Drawing.Size(66, 24);
@@ -128,28 +127,13 @@
             this.lblAbout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblAbout.Font = new System.Drawing.Font("Baskerville Old Face", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAbout.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblAbout.Location = new System.Drawing.Point(735, 9);
+            this.lblAbout.Location = new System.Drawing.Point(716, 9);
             this.lblAbout.Name = "lblAbout";
             this.lblAbout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblAbout.Size = new System.Drawing.Size(99, 24);
             this.lblAbout.TabIndex = 10;
             this.lblAbout.Text = "About Us";
             this.lblAbout.Click += new System.EventHandler(this.btnAbout_Click);
-            // 
-            // lblLogin
-            // 
-            this.lblLogin.AutoSize = true;
-            this.lblLogin.BackColor = System.Drawing.Color.Transparent;
-            this.lblLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblLogin.Font = new System.Drawing.Font("Baskerville Old Face", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblLogin.Location = new System.Drawing.Point(523, 9);
-            this.lblLogin.Name = "lblLogin";
-            this.lblLogin.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblLogin.Size = new System.Drawing.Size(64, 24);
-            this.lblLogin.TabIndex = 11;
-            this.lblLogin.Text = "Login";
-            this.lblLogin.Click += new System.EventHandler(this.lblLogin_Click);
             // 
             // pictureBox1
             // 
@@ -171,7 +155,6 @@
             this.Controls.Add(this.lblAbout);
             this.Controls.Add(this.lblOrder);
             this.Controls.Add(this.lblMenu);
-            this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblName);
@@ -195,7 +178,6 @@
         private System.Windows.Forms.Label lblMenu;
         private System.Windows.Forms.Label lblOrder;
         private System.Windows.Forms.Label lblAbout;
-        private System.Windows.Forms.Label lblLogin;
     }
 }
 

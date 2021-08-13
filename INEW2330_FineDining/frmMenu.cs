@@ -19,8 +19,6 @@ namespace INEW2330_FineDining
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'inew2330su21DataSet1.Merchandise' table. You can move, or remove it, as needed.
-            label3.Parent = pictureBox2;
             label4.Parent = pictureBox2;
 
             ProgOps.DatabaseCommand(dataGridView2, "SELECT MerchID, MerchName, MerchDescription, CAST(MerchCost AS numeric(15, 2)) FROM group2su212330.Merchandise");
