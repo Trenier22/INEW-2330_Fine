@@ -62,7 +62,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(89, 32);
-            this.button2.TabIndex = 47;
+            this.button2.TabIndex = 10;
             this.button2.Text = "Register";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -75,7 +75,7 @@
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(89, 32);
-            this.btnExit.TabIndex = 45;
+            this.btnExit.TabIndex = 11;
             this.btnExit.Text = "Close";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -87,7 +87,7 @@
             this.tbxLastName.Margin = new System.Windows.Forms.Padding(2);
             this.tbxLastName.Name = "tbxLastName";
             this.tbxLastName.Size = new System.Drawing.Size(200, 28);
-            this.tbxLastName.TabIndex = 43;
+            this.tbxLastName.TabIndex = 2;
             // 
             // tbxFirstName
             // 
@@ -96,7 +96,7 @@
             this.tbxFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.tbxFirstName.Name = "tbxFirstName";
             this.tbxFirstName.Size = new System.Drawing.Size(200, 28);
-            this.tbxFirstName.TabIndex = 42;
+            this.tbxFirstName.TabIndex = 1;
             // 
             // label4
             // 
@@ -120,7 +120,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 25);
-            this.label3.TabIndex = 40;
+            this.label3.TabIndex = 4;
             this.label3.Text = "First Name:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -164,7 +164,7 @@
             this.tbxPhone.Margin = new System.Windows.Forms.Padding(2);
             this.tbxPhone.Name = "tbxPhone";
             this.tbxPhone.Size = new System.Drawing.Size(200, 28);
-            this.tbxPhone.TabIndex = 49;
+            this.tbxPhone.TabIndex = 4;
             // 
             // label5
             // 
@@ -186,7 +186,7 @@
             this.tbxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.tbxEmail.Name = "tbxEmail";
             this.tbxEmail.Size = new System.Drawing.Size(200, 28);
-            this.tbxEmail.TabIndex = 51;
+            this.tbxEmail.TabIndex = 3;
             // 
             // label6
             // 
@@ -208,7 +208,7 @@
             this.tbxAddress.Margin = new System.Windows.Forms.Padding(2);
             this.tbxAddress.Name = "tbxAddress";
             this.tbxAddress.Size = new System.Drawing.Size(200, 28);
-            this.tbxAddress.TabIndex = 53;
+            this.tbxAddress.TabIndex = 5;
             // 
             // label7
             // 
@@ -230,7 +230,7 @@
             this.tbxCreditCard.Margin = new System.Windows.Forms.Padding(2);
             this.tbxCreditCard.Name = "tbxCreditCard";
             this.tbxCreditCard.Size = new System.Drawing.Size(200, 28);
-            this.tbxCreditCard.TabIndex = 55;
+            this.tbxCreditCard.TabIndex = 6;
             // 
             // label8
             // 
@@ -252,7 +252,7 @@
             this.tbxUsername.Margin = new System.Windows.Forms.Padding(2);
             this.tbxUsername.Name = "tbxUsername";
             this.tbxUsername.Size = new System.Drawing.Size(200, 28);
-            this.tbxUsername.TabIndex = 57;
+            this.tbxUsername.TabIndex = 8;
             // 
             // tbxPassword
             // 
@@ -260,8 +260,9 @@
             this.tbxPassword.Location = new System.Drawing.Point(180, 505);
             this.tbxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.PasswordChar = '*';
             this.tbxPassword.Size = new System.Drawing.Size(200, 28);
-            this.tbxPassword.TabIndex = 59;
+            this.tbxPassword.TabIndex = 9;
             // 
             // label10
             // 
@@ -296,7 +297,7 @@
             this.tbxCVV.Margin = new System.Windows.Forms.Padding(2);
             this.tbxCVV.Name = "tbxCVV";
             this.tbxCVV.Size = new System.Drawing.Size(200, 28);
-            this.tbxCVV.TabIndex = 62;
+            this.tbxCVV.TabIndex = 7;
             // 
             // label11
             // 
@@ -340,7 +341,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmCustRegister";
-            this.Text = "Register";
+            this.Text = "42";
             this.Load += new System.EventHandler(this.frmCustRegister_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
