@@ -25,7 +25,7 @@ namespace INEW2330_FineDining
             {
                 ProgOps.DatabaseSQLCommand("INSERT INTO group2su212330.Customer(CustFirstName, CustLastName, CustEmail, CustPhone, CustAddress, CustCreditCard, CustLoginUserName, CustLoginPassword, CustCVV)" +
                     " VALUES('" + tbxFirstName.Text + "', '" + tbxLastName.Text + "', '" + tbxEmail.Text + "', " + tbxPhone.Text + ", '" + tbxAddress.Text + "', " + tbxCreditCard.Text + ", '" + tbxUsername.Text + "', '" + tbxPassword.Text + "', '" + tbxCVV.Text + "');");
-                //this.Close();
+                MessageBox.Show("Registration Complete");
             }
             catch(Exception ex)
             {
