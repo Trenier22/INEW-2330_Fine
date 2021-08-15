@@ -21,7 +21,7 @@ namespace INEW2330_FineDining
         {
             label4.Parent = pictureBox2;
 
-            ProgOps.DatabaseCommand(dataGridView2, "SELECT MerchID, MerchName, MerchDescription, CAST(MerchCost AS numeric(15, 2)) FROM group2su212330.Merchandise");
+            ProgOps.DatabaseCommand(dataGridView2, "SELECT MerchID AS ID, MerchName AS Name, MerchDescription AS Description, CAST(MerchCost AS numeric(15, 2)) AS Cost FROM group2su212330.Merchandise");
         }
 
         private void btnExit_Click(object sender, EventArgs e)
