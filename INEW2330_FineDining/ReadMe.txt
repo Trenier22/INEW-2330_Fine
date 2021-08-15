@@ -1,6 +1,6 @@
  * For the Email Password recovery you will need to enter your own email and email password into the from/pass fields. You will find those values in the frmForgotPassword.cs
 Form and in the code it will be under btnSendCode_Click, you will enter your email address into from(line 50) and your email password into pass(line 51). You wanted me to remind
-you to do this when we spoke the other day.
+you to do this when we spoke the other day. You will also need to enable the less secure apps setting in google for the program to send an email to your account.
  
  
   * Credentials for login testing:
