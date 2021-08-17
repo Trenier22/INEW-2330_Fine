@@ -40,16 +40,22 @@ namespace INEW2330_FineDining
 
             if(ProgOps._dtCustomersTable.Rows.Count == 1)
             {
+                tbxUsername.Text = "";
+                tbxPassword.Text = "";
                 frmMain cust = new frmMain();
                 //this.Hide();
                 cust.Show();
             }
             else if (ProgOps._dtEmployeesTable.Rows.Count == 1)
             {
+                tbxUsername.Text = "";
+                tbxPassword.Text = "";
                 this.Hide();
             }
             else if (tbxUsername.Text == "kathywilganowski" && tbxPassword.Text == "12345")
             {
+                tbxUsername.Text = "";
+                tbxPassword.Text = "";
                 frmManager man = new frmManager();
                 //this.Hide();
                 man.Show();
@@ -73,6 +79,8 @@ namespace INEW2330_FineDining
 
         private void button1_Click(object sender, EventArgs e)
         {
+            tbxUsername.Text = "";
+            tbxPassword.Text = "";
             frmForgotPassword reset = new frmForgotPassword();
             reset.Show();
         }
